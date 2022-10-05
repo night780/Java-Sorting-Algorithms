@@ -1,13 +1,22 @@
 package driver;
 
 import sorts.BubbleSorter;
+import sorts.MergeSorter;
 import utilities.Utilities;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Selection Sorter\n");
+        int[] testArray={45,54,12,33,11,74,1,85};
+//        int[] testArray= Utilities.generateArray(20, 1, 50);
 
+        MergeSorter sorter = new MergeSorter();
+        sorter.mergeSort(testArray);
+
+    }
+    private static void testBubbleSort(){
         int[] testArray = Utilities.generateArray(20, 1, 50);
 
         System.out.println("Bubble Sorter\n");

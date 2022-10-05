@@ -6,9 +6,17 @@ import java.util.Arrays;
 
 /**
  * Runtime: O(n^2)
+ * @author jacob jonas
+ * @version 1
  */
 public class BubbleSorter {
 
+
+    /**
+     * Sort.
+     *
+     * @param array the array
+     */
     public static void sort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             //a pass that compares adjacent elements and bubbles the largest element to the largest index
