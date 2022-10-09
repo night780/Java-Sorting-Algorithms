@@ -97,14 +97,12 @@ public class Main {
     }
 
     private static void testMergeSorter(){
-        int[] testArray = Utility.generateArray(20, 1, 50);
-        int low = 0;
-        int high = testArray.length - 1;
+        int[] testArray = Utility.generateArray(10, 1, 20);
+
         System.out.println("Merge Sorter\n");
 
         System.out.println("Before :" + Arrays.toString(testArray));
         System.out.println();
-        System.out.println("...Not finished...");
         MergeSorter.sort(testArray);
         System.out.println();
         System.out.println("After :" + Arrays.toString(testArray));
