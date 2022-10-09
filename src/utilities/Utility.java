@@ -2,7 +2,7 @@ package utilities;
 
 import java.util.Random;
 
-public class Utilities {
+public class Utility {
     public static boolean containsInversions(int[] array) {
         for (int i = 0; i < array.length-1; i++) {
             if (array[i]>array[i+1]){

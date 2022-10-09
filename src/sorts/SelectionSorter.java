@@ -1,6 +1,6 @@
 package sorts;
 
-import utilities.Utilities;
+import utilities.Utility;
 
 /**
  * The type Basic sorts.
@@ -14,7 +14,7 @@ public class SelectionSorter {
      *
      * @param array the array
      */
-    public static void selectionSort(int[] array)
+    public static void sort(int[] array)
     {
         // make n selections, where n is array.length
         for (int i = 0; i < array.length; i++)
@@ -31,7 +31,7 @@ public class SelectionSorter {
             }
 
             // swap whatever is in index i with the next smallest element
-            Utilities.swap(array, i, smallest);
+            Utility.swap(array, i, smallest);
         }
     }
 }

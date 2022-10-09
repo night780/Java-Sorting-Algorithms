@@ -5,14 +5,14 @@ package sorts;
  */
 public class MergeSorter {
 
-    private int[] auxArray;
+    private static int[] auxArray;
 
     /**
      * Merge sort.
      *
      * @param array the array
      */
-    public void mergeSort(int[] array) {
+    public static void sort(int[] array) {
         // Checks if the array is already sorted
         if (array.length <= 1) {
             return;//already sorted
@@ -37,11 +37,10 @@ public class MergeSorter {
      * @param low   the array
      * @param high  the array
      */
-    private void mergeSort(int[] array, int low, int high) {
-
+    private static void mergeSort(int[] array, int low, int high) {
         //BASE CASE, the sub array is one or fewer elements
         if (high - low <= 0) {
-            System.out.println("Reached a base case: "+array[high]);
+//            System.out.println("Reached a base case: "+array[high]);
             return;//the sub array is already sorted
         }
 
@@ -55,7 +54,7 @@ public class MergeSorter {
         merge(array, low, high);
     }
 
-    private void merge(int[] array, int low, int high) {
+    private static void merge(int[] array, int low, int high) {
         //TODO write the merge routine
     }
 }

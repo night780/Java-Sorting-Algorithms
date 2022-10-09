@@ -1,6 +1,6 @@
 package sorts;
 
-import utilities.Utilities;
+import utilities.Utility;
 
 import java.util.Arrays;
 
@@ -26,7 +26,7 @@ public class BubbleSorter {
                 //is there an inversion (checking)
                 if (array[j] > array[j + 1]) {
                     //swap them...
-                    Utilities.swap(array, j, j + 1);
+                    Utility.swap(array, j, j + 1);
                     swapCount++;
                 }
             }
