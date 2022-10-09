@@ -11,6 +11,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * This function is the main function that runs the program. It asks the user to pick a sorter, and then runs the test
+     * function for that sorter
+     */
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);  // Create a Scanner object

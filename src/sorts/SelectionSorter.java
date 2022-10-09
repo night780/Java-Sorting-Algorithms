@@ -16,6 +16,19 @@ public class SelectionSorter {
      */
     public static void sort(int[] array)
     {
+        sort(array, 0, array.length-1);
+    }
+
+
+    /**
+     * Private Selection sort algorithm.
+     *
+     * @param array the array to sort
+     * @param low the lowest index of the array
+     * @param high the highest index of the array
+     */
+    private static void sort(int[] array,int low, int high)
+    {
         // make n selections, where n is array.length
         for (int i = 0; i < array.length; i++)
         {
