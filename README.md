@@ -1,4 +1,4 @@
-#This is program was written to demonstrate the use of the different sorting algorithms 
+<h1>This is program was written to demonstrate the use of the different sorting algorithms </h1>
 
 <img src="src/SortDiagram4.png">
 
